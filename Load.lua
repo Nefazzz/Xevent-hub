@@ -1,8 +1,13 @@
-  
-  -----------------------------------------------------------------------------
-  ----made by XEVENT HUB-------------
-
-
+  if not game:IsLoaded() then game.Loaded:Wait() end
+  repeat wait() until game.Players
+  repeat wait() until game.Players.LocalPlayer
+  repeat wait() until game.ReplicatedStorage
+  repeat wait() until game.ReplicatedStorage:FindFirstChild("Remotes");
+  repeat wait() until game.Players.LocalPlayer:FindFirstChild("PlayerGui");
+  repeat wait() until game.Players.LocalPlayer.PlayerGui:FindFirstChild("Main");
+ 
+ 
+  ---------Config
 _G.antiscan = true
 
 getgenv().A = require(game:GetService("ReplicatedStorage").CombatFramework.RigLib).wrapAttackAnimationAsync
@@ -18,17 +23,6 @@ spawn(function()
         end
     end
 end)
-
-  if not game:IsLoaded() then game.Loaded:Wait() end
-  repeat wait() until game.Players
-  repeat wait() until game.Players.LocalPlayer
-  repeat wait() until game.ReplicatedStorage
-  repeat wait() until game.ReplicatedStorage:FindFirstChild("Remotes");
-  repeat wait() until game.Players.LocalPlayer:FindFirstChild("PlayerGui");
-  repeat wait() until game.Players.LocalPlayer.PlayerGui:FindFirstChild("Main");
- 
- 
-  ---------Config
   
   if not getgenv().Config then
       getgenv().Config = {
