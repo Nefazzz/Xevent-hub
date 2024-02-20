@@ -5,7 +5,7 @@ elseif game.PlaceId == 4442272183 then
 elseif game.PlaceId == 7449423635 then
     World3 = true
 else
-    game:GetService("Players").LocalPlayer:Kick("Do not Support this game")
+    game:GetService("Players").LocalPlayer:Kick("Do not Support, Please wait...")
 end
 
 function CheckQuest() 
@@ -1737,7 +1737,7 @@ end
     if Distance < 25 then
         Speed = 10000
     elseif Distance < 50 then
-        Speed = 1000
+        Speed = 2000
     elseif Distance < 150 then
         Speed = 800
     elseif Distance < 250 then
@@ -2530,11 +2530,10 @@ spawn(function()
         task.wait()
     until game.Players.LocalPlayer and game.Players.LocalPlayer.Team ~= nil 
     wait(1.5)
-    require(game.ReplicatedStorage.Notification).new("<Color=Red>https://discord.com/invite/P4X9uXRRRc<Color=/>"):Display()
-    wait(.5)
     require(game.ReplicatedStorage.Notification).new("<Color=Red>Xevent Hub<Color=/>"):Display()
-    wait(1)
-    require(game.ReplicatedStorage.Notification).new("<Color=Red>Enjoy My script 😁<Color=/>"):Display()
+    wait(.14)
+    require(game.ReplicatedStorage.Notification).new("<Color=Yellow>Discord : https://discord.com/invite/P4X9uXRRRc <Color=/>"):Display()
+    wait(.36)
 end)
 
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
@@ -2542,21 +2541,21 @@ local Window = OrionLib:MakeWindow({Name = "Xevent Hub", HidePremium = false, In
 
 OrionLib:MakeNotification({
 	Name = "Xevent Hub",
-	Content = "Choose Teams ",
+	Content = "Choose Teams Bro?",
 	Image = "rbxassetid://16447011266",
 	Time = 7
 })
 
 OrionLib:MakeNotification({
 	Name = "Xevent Hub",
-	Content = "Xevent hub still Beta",
+	Content = "..",
 	Image = "rbxassetid://16447011266",
 	Time = 25
 })
 
 OrionLib:MakeNotification({
     Name = "Xevent Hub",
-    Content = "Please Wait still loading script...,Do not enable any function",
+    Content = "Please Wait loading script..,Do not enable any function",
     Image = "rbxassetid://16447011266",
     Time = 5
 })
@@ -2570,7 +2569,7 @@ local W = Window:MakeTab({
 })
 
 local M = Window:MakeTab({
-    Name = "🏠 Main",
+    Name = "🏠 General",
     Icon = "rbxassetid://16447011266",
     PremiumOnly = false
 })
@@ -2606,7 +2605,7 @@ local RA = Window:MakeTab({
 })
 
 local LC = Window:MakeTab({
-    Name = "👤Local Players",
+    Name = "👤 Local Players",
     Icon = "rbxassetid://16447011266",
     PremiumOnly = false
 })
@@ -2618,13 +2617,13 @@ local Wld = Window:MakeTab({
 })
 
 local SV = Window:MakeTab({
-    Name = "📈 Status Server",
+    Name = "📈 Status Sever",
     Icon = "rbxassetid://16447011266",
     PremiumOnly = false
 })
 
 local D = Window:MakeTab({
-    Name = "🍍 Devil Fruit",
+    Name = "🍎 Devil Fruit",
     Icon = "rbxassetid://16447011266",
     PremiumOnly = false
 })
@@ -2652,7 +2651,6 @@ local Section = W:AddSection({
     Name = "Credit"
 })
 
-
 W:AddLabel("Script By Xevent")
 
 local Section = W:AddSection({
@@ -2669,6 +2667,16 @@ local locallv = W:AddLabel("Level")
         end
     end)
     
+    local localrace = W:AddLabel("Race")
+    
+    spawn(function()
+        while wait() do
+            pcall(function()
+                localrace:Set("Race :".." "..game:GetService("Players").LocalPlayer.Data.Race.Value)
+            end)
+        end
+    end)
+    
     local localbeli = W:AddLabel("Beli")
     
     spawn(function()
@@ -2680,21 +2688,11 @@ local locallv = W:AddLabel("Level")
     end)
     
     local localfrag = W:AddLabel("Fragment")
- 
+    
     spawn(function()
         while wait() do
             pcall(function()
                 localfrag:Set("Fragments :".." "..game:GetService("Players").LocalPlayer.Data.Fragments.Value)
-            end)
-        end
-    end)
-    
-    local localrace = W:AddLabel("Race")
-    
-    spawn(function()
-        while wait() do
-            pcall(function()
-                localrace:Set("Race :".." "..game:GetService("Players").LocalPlayer.Data.Race.Value)
             end)
         end
     end)
@@ -2745,12 +2743,13 @@ local locallv = W:AddLabel("Level")
     end)
 
     local Section = W:AddSection({
-        Name = "Status Script"
+        Name = "Status Hack"
     })
-   
-    W:AddLabel("Config Save : ⚒️")
-    local Farmfast = W:AddLabel("Farm Fast : ⚒️")
-    local Bypass = W:AddLabel("Bypass : ⚒️")
+    
+    local LevelFarmFarm W:AddLabel("Kaitun : ❌")
+    W:AddLabel("Config Save : ❌")
+    local Farmfast = W:AddLabel("Farm Fast : ❌")
+    local Bypass = W:AddLabel("Bypass : ❌")
     local Section = W:AddSection({
         Name = "World"
     })
@@ -2912,11 +2911,11 @@ task.spawn(function()
 
 if World2 and World1 then
     local Section = M:AddSection({
-        Name = "BOOSTS"
+        Name = "Boost"
     })
 
     M:AddButton({
-        Name = "BOOST FPS",
+        Name = "Boost FPS",
         Callback = function()
             pcall(function()
                 game:GetService("Lighting").FantasySky:Destroy()
@@ -3021,7 +3020,7 @@ end
     })
 
 
-M:AddParagraph("Main Farm")
+M:AddParagraph("Main Farm","Click to Box to Farm, I ready update new mob farm!.")
 
 ToggleFarm = M:AddToggle({
     Name = "Auto Farm",
@@ -3038,7 +3037,7 @@ local Section = M:AddSection({
     Name = "Mastery Menu"
 })
 
-M:AddParagraph("Mastery Menu")
+M:AddParagraph("Mastery Menu","Click To Box to Start Farm Mastery")
 
 M:AddToggle({
     Name = "Auto Farm BF Mastery",
@@ -3141,7 +3140,7 @@ M:AddToggle({
     })
 
 M:AddToggle({
-    Name = "Bring Mobs[Beta]",
+    Name = "Bring Mobs[Fix]",
     Default = true,
     Flag = "Bring Mobs",
     Save = false,
@@ -3167,9 +3166,9 @@ spawn(function()
         if _G.BringMode then
             pcall(function()
                 if _G.BringMode == "Low" then
-                    _G.BringMode = 200
-                elseif _G.BringMode == "Normal" then
                     _G.BringMode = 300
+                elseif _G.BringMode == "Normal" then
+                    _G.BringMode = 375
                 elseif _G.BringMode == "Super Bring" then
                     _G.BringMode = 450
                 end
@@ -3179,7 +3178,7 @@ spawn(function()
 end)
 
 local Section = M:AddSection({
-    Name = "FastAttack"
+    Name = "FastAttack :"
 })
 
 M:AddToggle({
@@ -3227,7 +3226,7 @@ end)
 local AttackList = {"0", "0.1", "0.175", "0.2", "0.25", "0.3", "0.35", "0.4", "0.45", "0.5", "0.55", "0.6", "0.65", "0.7", "0.75", "0.8", "0.85", "0.9", "0.95", "0.1"}
 M:AddDropdown({
 	Name = "FastAttack Delay",
-	Default = "0.75",
+	Default = "0.5",
 	Options = AttackList,
     Flag = "FastAttack Delay",
     Save = true,
@@ -3336,6 +3335,34 @@ Farmfasttoggle = M:AddToggle({
     end    
 })
 
+local Section = M:AddSection({
+    Name = "Kaitun ( Bugged )"
+})
+
+M:AddToggle({
+    Name = "Kaitun [Bugged]",
+    Default = false,
+    Flag = "Kaitun",
+    Save = true,
+    Callback = function(Value)
+        _G.RedeemCode = Value
+        _G.AutoFarm = Value
+        _G.Farmfast = Value
+       _G.SelectWeapon = "Combat"
+       _G.AutoPlayerHunter = Value
+       _G.Auto_Stats_Kaitun = Value
+       _G.Auto_Saber = Value
+       _G.AutoSuperhuman = Value
+       _G.AutoBartilo = Value
+       _G.AutoBuyLegendarySword = Value
+       _G.BuyAllAib = Value
+       StopTween(_G.AutoFarm)
+       StopTween(_G.Hunter)
+       StopTween(_G.Farmfast)
+       StopTween(_G.Auto_Saber)
+    end    
+})
+
 M:AddToggle({
     Name = "Auto Click",
     Default = false,
@@ -3437,7 +3464,7 @@ M:AddToggle({
     })
 
 TweenChest = M:AddToggle({
-        Name = "Auto Chest [Safe]",
+        Name = "Auto Chest [Tween]",
         Default = false,
         Flag = "Auto Chest",
         Save = true,
@@ -3448,7 +3475,7 @@ TweenChest = M:AddToggle({
     })
 
     M:AddToggle({
-        Name = "Auto Chest[Risk]",
+        Name = "Auto Chest[Bypass]",
         Default = false,
         Flag = "Auto Chest[Bypass]",
         Save = true,
@@ -3458,9 +3485,9 @@ TweenChest = M:AddToggle({
     })
 
 M:AddToggle({
-    Name = "Stop Only Fist of darkness or God's Chalice",
+    Name = "Stop Only Fist Of Darkness or God's Chalice",
     Default = false,
-    Flag = "Stop Only Fist of darkness or God's Chalice",
+    Flag = "Stop Only First Of Darkness or God's Chalice",
     Save = true,
     Callback = function(Value)
         _G.StopChest = Value
@@ -3479,7 +3506,7 @@ end
 end)
 
 local Section = M:AddSection({
-    Name = "Farm Bone"
+    Name = "Bone Menu"
 })
 
 local Bone = M:AddLabel("Bone : ")
@@ -3523,7 +3550,7 @@ ToggleRandom = M:AddToggle({
     end)
     
     local Section = M:AddSection({
-        Name = "Other"
+        Name = "Other Menu"
     })
 
 local EliteProgress = M:AddLabel("")
@@ -3560,7 +3587,7 @@ local EliteProgress = M:AddLabel("")
     })
 
         M:AddToggle({
-            Name = "Auto Raid Pirate",
+            Name = "Raid Castle",
             Default = false,
             Flag = "Auto Castle",
             Save = true,
@@ -3575,7 +3602,7 @@ local EliteProgress = M:AddLabel("")
         
 
         M:AddToggle({
-            Name = "Auto Cake Princess",
+            Name = "Auto Katakuri",
             Default = false,
             Flag = "Auto Katakuri",
             Save = true,
@@ -3586,7 +3613,7 @@ local EliteProgress = M:AddLabel("")
         })    
         
         M:AddToggle({
-            Name = "Auto Spawn Cake Princess",
+            Name = "Auto Spawn Katakuri",
             Default = true,
             Callback = function(Value)
                 game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("CakePrinceSpawner",Value)
@@ -3594,7 +3621,7 @@ local EliteProgress = M:AddLabel("")
         })
         
         M:AddToggle({
-            Name = "Auto Dough King",
+            Name = "Auto Katakuri v2",
             Default = false,
             Flag = "Auto Katakuri v2",
             Save = true,
@@ -3605,7 +3632,7 @@ local EliteProgress = M:AddLabel("")
         })
         
         M:AddToggle({
-            Name = "Auto Dough King [HOP]",
+            Name = "Auto Katakuri v2[HOP]",
             Default = false,
             Flag = "Auto Katakuri v2[HOP]",
             Save = true,
@@ -3617,8 +3644,6 @@ local EliteProgress = M:AddLabel("")
 local Section = M:AddSection({
     Name = "Boss"
 })
-
-M:AddParagraph("Auto Farm Boss")
 
     local Section = M:AddSection({
         Name = "Observation Haki"
@@ -3970,11 +3995,11 @@ IQ:AddToggle({
 })
 
     local Section = IQ:AddSection({
-        Name = "Soul Guitar"
+        Name = "Soul Guita"
     })
 
     IQ:AddToggle({
-        Name = "Auto Soul Guitar",
+        Name = "Auto Soul Guita",
         Default = false,
         Flag = "Auto Soul",
         Save = true,
@@ -3985,7 +4010,7 @@ IQ:AddToggle({
     })
 
 IQ:AddToggle({
-    Name = "Auto Soul Guitar [HOP]",
+    Name = "Auto Soul Guita[HOP]",
     Default = false,
     Flag = "Auto Soul[HOP]",
     Save = true,
@@ -3995,7 +4020,7 @@ IQ:AddToggle({
 })
 
 IQ:AddToggle({
-    Name = "Auto Observation V2",
+    Name = "Auto Auto Observation V2",
     Default = false,
     Flag = "Auto ObservationV2",
     Save = true,
@@ -4006,11 +4031,11 @@ IQ:AddToggle({
 })
 
 local Section = IQ:AddSection({
-    Name = "Auto Dual Cursed Katana[Bugged]"
+    Name = "Auto Dual Curset Katana[Not Work]"
 })
 
 IQ:AddToggle({
-    Name = "Auto Dual Cursed Katana",
+    Name = "Auto Dual Curset Katana",
     Default = false,
     Flag = "Auto DualCursetKatana",
     Save = true,
@@ -4100,8 +4125,6 @@ IQ:AddToggle({
             Name = "ArenaTrainer"
         })
 
-        IQ:AddLabel("Auto Dummy")
-
         IQ:AddToggle({
             Name = "Automatically hit the dummy",
             Default = false,
@@ -4114,7 +4137,7 @@ IQ:AddToggle({
         })
 
         IQ:AddToggle({
-            Name = "Automatically hit the dummy [HOP]",
+            Name = "Automatically hit the dummy[HOP]",
             Default = false,
             Flag = "Auto dummy[HOP]",
             Save = true,
@@ -4124,7 +4147,7 @@ IQ:AddToggle({
         })
 
         local Section = IQ:AddSection({
-            Name = "Hallow Scythe"
+            Name = "Seperator Hallow Scythe"
         })
 
         IQ:AddToggle({
@@ -4135,7 +4158,7 @@ IQ:AddToggle({
             Callback = function(Value)
                 _G.AutoFarmBossHallow = Value
                 StopTween(_G.AutoFarmBossHallow)
-            end   
+            end    
         })
 
 ToggleHallow = IQ:AddToggle({
@@ -4164,7 +4187,7 @@ ToggleHallow = IQ:AddToggle({
         })
 
         IQ:AddToggle({
-            Name = "Auto Dark Dagger [HOP]",
+            Name = "Auto Dark Dagger[HOP]",
             Default = false,
             Flag = "Auto Dark[HOP]",
             Save = true,
@@ -4212,7 +4235,7 @@ ToggleHallow = IQ:AddToggle({
     })
 
 IQ:AddToggle({
-    Name = "Auto Seabeast [HOP]",
+    Name = "Auto Seabeast[HOP]",
     Default = false,
     Flag = "Auto Seabeast[HOP]",
     Save = true,
@@ -4240,7 +4263,7 @@ local Section = IQ:AddSection({
 IQ:AddToggle({
     Name = "Auto Summon Mirage Island",
     Default = false,
-    Flag = "Auto Mirrage",
+    Flag = "Auto Mirage",
     Save = true,
     Callback = function(Value)
         _G.dao = Value
@@ -4312,9 +4335,9 @@ IQ:AddToggle({
 }) 
     
 IQ:AddToggle({
-    Name = "Find Mirage [HOP]",
+    Name = "Find Mirrage[HOP]",
     Default = false,
-    Flag = "Auto Mirrage2",
+    Flag = "Auto Mirage2",
     Save = true,
     Callback = function(Value)
         _G.Hop =  Value
@@ -4770,7 +4793,7 @@ local Section = RA:AddSection({
 })
 
 RA:AddToggle({
-    Name = "Kill Aura",
+    Name = "KillAura",
     Default = false,
     Flag = "Auto KillAura",
     Save = true,
@@ -4801,11 +4824,11 @@ RA:AddToggle({
 })
 
 local Section = RA:AddSection({
-    Name = "Raid Law"
+    Name = "Raid Law Menu"
 })
 
 RA:AddToggle({
-    Name = "Auto Buy Chips Law",
+    Name = "Auto Buy Chips Law[Raid]",
     Default = false,
     Flag = "Auto Chips Law",
     Save = true,
@@ -4914,8 +4937,8 @@ LC:AddDropdown({
     "Peanut Island",
     "Cake Island",
     "Cocoa Island",
-    "Candy Island",
-    "Tiki Outpost"},
+    "Tiki Outpost New",
+    "Candy Island New⛄"},
     Flag = "Select Island",
     Save = true,
     Callback = function(Value)
@@ -5023,9 +5046,9 @@ LC:AddToggle({
                     topos(CFrame.new(-1884.7747802734375, 19.327526092529297, -11666.8974609375))
                 elseif _G.SelectIsland == "Cocoa Island" then
                     topos(CFrame.new(87.94276428222656, 73.55451202392578, -12319.46484375))
-                elseif _G.SelectIsland == "Candy Island" then
+                elseif _G.SelectIsland == "Candy Island New⛄" then
                     topos(CFrame.new(-1014.4241943359375, 149.11068725585938, -14555.962890625))
-                elseif _G.SelectIsland == "Tiki Outpost" then
+                elseif _G.SelectIsland == "Tiki Outpost New" then
                     topos(CFrame.new(-16101.1885, 12.8422165, 380.942291, 0.194113985, 1.39194061e-08, -0.980978966, -9.82904691e-09, 1, 1.22443504e-08, 0.980978966, 7.26528837e-09, 0.194113985))
             else
                 _G.TeleportIsland = false
@@ -5052,8 +5075,8 @@ NPC1 = {
 }
 
 NPC2 = {
-    "Dragom Breath",
-            "Mysterious Man",
+    "Dargon Berath",
+            "Mtsterious Man",
             "Mysterious Scientist",
             "Awakening Expert",
             "Nerd", 
@@ -5133,9 +5156,9 @@ end
                 _G.TeleportNPC = Value
         if _G.TeleportNPC == true then
             repeat wait()
-                if _G.SelectNPC == "Dragon Breath" then
+                if _G.SelectNPC == "Dargon Berath" then
                     topos(CFrame.new(703.372986, 186.985519, 654.522034, 1, 0, 0, 0, 1, 0, 0, 0, 1))
-                elseif _G.SelectNPC == "Mysterious Man" then
+                elseif _G.SelectNPC == "Mtsterious Man" then
                     topos(CFrame.new(-2574.43335, 1627.92371, -3739.35767, 0.378697902, -9.06400288e-09, 0.92552036, -8.95582009e-09, 1, 1.34578926e-08, -0.92552036, -1.33852689e-08, 0.378697902))
                 elseif _G.SelectNPC == "Mysterious Scientist" then
                     topos(CFrame.new(-6437.87793, 250.645355, -4498.92773, 0.502376854, -1.01223634e-08, -0.864648759, 2.34106086e-08, 1, 1.89508653e-09, 0.864648759, -2.11940012e-08, 0.502376854))
@@ -5221,7 +5244,7 @@ end
         })
 
         local Section = LC:AddSection({
-            Name = "Teleport Seabeast"
+            Name = "Teleport SeSeabeast"
         })
 
 LC:AddToggle({
@@ -5239,7 +5262,7 @@ LC:AddToggle({
 })
 
 local Section = LC:AddSection({
-    Name = "Teleport Mirage"
+    Name = "Mirage Menu"
 })
 
 LC:AddButton({
@@ -5442,9 +5465,9 @@ local Elite_Hunter_Status = SV:AddLabel("Only Third Sea")
             pcall(function()
                 while wait() do
         if game.Workspace._WorldOrigin.Locations:FindFirstChild('Mirage Island') then
-        Mirragecheck:Set('Mirage: ✅')
+        Mirragecheck:Set('Mirrage: ✅')
         else
-          Mirragecheck:Set('Mirage: ❌ ' )end
+          Mirragecheck:Set('Mirrage: ❌ ' )end
                 end
             end)
     end)
@@ -5453,7 +5476,7 @@ end
 Mirragecheck = SV:AddLabel("Only Third Sea")
 
 local Section = SV:AddSection({
-    Name = "Cake Princess Check"
+    Name = "Dough King Check"
 })
 
 local MobKilled = SV:AddLabel("Only Third Sea")
@@ -5468,7 +5491,7 @@ spawn(function()
             elseif string.len(game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("CakePrinceSpawner")) == 86 then
                 MobKilled:Set("Defeat : "..string.sub(game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("CakePrinceSpawner"),39,39))
             else
-                MobKilled:Set("Cake Princess : ✅")
+                MobKilled:Set("Dough King V1 : ✅")
             end
         end)
     end
@@ -5633,7 +5656,7 @@ FruitList = {
     "Ice-Ice",
     "Sand-Sand",
     "Dark-Dark",
-    "Ghost-Ghost",
+    "Revive-Revive",
     "Diamond-Diamond",
     "Light-Light",
     "Rubber-Rubber",
@@ -5642,24 +5665,20 @@ FruitList = {
     "Quake-Quake",
     "Human-Human: Buddha",
     "Love-Love",
-    "Sound-Sound",
-    "Spider-Spider",
+    "String-String",
     "Bird-Bird: Phoenix",
-    "Spirit-Spirit",
-    "Portal-Portal",
+    "Soul-Soul",
+    "Potal-Potal",
     "Rumble-Rumble",
     "Pain-Pain",
     "Gravity-Gravity",
-    "Mammoth-Mammoth",
-    "TRex-TRex",
     "Dough-Dough",
     "Venom-Venom",
     "Shadow-Shadow",
     "Control-Control",
     "Spirit-Spirit",
     "Dragon-Dragon",
-    "Leopard-Leopard",
-    "Kitsune-Kitsune"
+    "Leopard-Leopard"
 }
 
 D:AddToggle({
@@ -5764,7 +5783,7 @@ spawn(function()
 end)
 
 D:AddToggle({
-    Name = "Bring All Fruit [75% Kick]",
+    Name = "Bring All Fruit[75% Kick]",
     Default = false,
     Flag = "Bring All Fruit[75% Kick]",
     Save = true,
@@ -5857,9 +5876,9 @@ spawn(function()
 end)
 
 MoveCamTooMoonToggle = R:AddToggle({
-    Name = "Lock Moon",
+    Name = "Auto Look Moon",
     Default = false,
-    Flag = "Lock Moon",
+    Flag = "Move Cam to Moon",
     Save = true,
     Callback = function(Value)
         _G.AutoDooHee = Value
@@ -5957,7 +5976,7 @@ R:AddButton({
 })
 
 R:AddButton({
-    Name = "Teleport to Ancient One",
+    Name = "Teleport to Anclient One",
     Callback = function()
         Game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(28286.35546875, 14895.3017578125, 102.62469482421875)
         Game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(28286.35546875, 14895.3017578125, 102.62469482421875)
@@ -6017,7 +6036,7 @@ R:AddButton({
 })
 
 local Section = R:AddSection({
-    Name = "Trials"
+    Name = "Other Trials"
 })
 
 R:AddToggle({
@@ -6055,7 +6074,7 @@ SH:AddButton({
 })
 
 SH:AddButton({
-    Name = "Electrol",
+    Name = "Electro",
     Callback = function()
         game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BuyElectro")
       end    
@@ -6117,6 +6136,13 @@ SH:AddButton({
     Name = "Godhuman",
     Callback = function()
         game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BuyGodhuman")
+      end    
+})
+
+SH:AddButton({
+    Name = "Sanguine Art",
+    Callback = function()
+        game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BuySanguineArt")
       end    
 })
 
@@ -6364,7 +6390,7 @@ C:AddButton({
 })
 
 C:AddButton({
-    Name = "Open Inventory [Old]",
+    Name = "Open Inventory[Old]",
     Callback = function()
         game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("getInventoryWeapons")
         wait(1)
@@ -6395,7 +6421,7 @@ C:AddButton({
 })
 
 C:AddToggle({
-    Name = "Buy Haki Color (Random)",
+    Name = "Buy Haki Color(Random)",
     Default = false,
     Callback = function(Value)
         _G.AutoBuyEnchancementColour = Value
@@ -8338,8 +8364,14 @@ pcall(function()
         if _G.AutoEliteHunter then
             if game:GetService("Players").LocalPlayer.PlayerGui.Main.Quest.Visible == true then
                 OrionLib:MakeNotification({
-                    Name = "Xevent Hub (Notif)",
-                    Content = "[EN] : Please cancel the farm level quest (if any)",
+                    Name = "Xevent Hub(Noitification)",
+                    Content = "[EN] : Please cancel the farrm level quest (if any)",
+                    Image = "rbxassetid://16447011266",
+                    Time = 9
+                })
+                OrionLib:MakeNotification({
+                    Name = "Xevent Hub(Noitification)",
+                    Content = "[VN] : Làm ơn hủy nhiệm vụ farrm level(nếu có)",
                     Image = "rbxassetid://16447011266",
                     Time = 9
                 })
@@ -8507,8 +8539,8 @@ spawn(function()
             if _G.AutoObservation then
                 if game:GetService("Players").LocalPlayer.VisionRadius.Value >= 3000 then
                     OrionLib:MakeNotification({
-                        Name = "Xevent Hub",
-                        Content = "!!You Alredy Max Exp!!",
+                        Name = "Xevent Hub BOT",
+                        Content = "!!You Are Max Point!!",
                         Image = "rbxassetid://14919714384",
                         Time = 5
                     })
@@ -8657,7 +8689,7 @@ spawn(function()
             wait(2.0)
             OrionLib:MakeNotification({
                 Name = "Xevent Hub",
-                Content = "You Dont Have Enough Belly or Fragment!",
+                Content = "You not have beli or fragment!",
                 Image = "rbxassetid://16447011266",
                 Time = 5
             })
@@ -8817,8 +8849,8 @@ spawn(function()
                         end
                     else
                         OrionLib:MakeNotification({
-                            Name = "Xevent Hub",
-                            Content = "You Dont Have Superhuman",
+                            Name = "Xevent Hub BOT",
+                            Content = "Not Have Superhuman",
                             Image = "rbxassetid://14919714384",
                             Time = 5
                         })
@@ -8830,8 +8862,8 @@ spawn(function()
                         end
                     else
                         OrionLib:MakeNotification({
-                            Name = "Xevent Hub",
-                            Content = "You Dont Have Death Step",
+                            Name = "Xevent Hub BOT",
+                            Content = "Not Have Death Step",
                             Image = "rbxassetid://14919714384",
                             Time = 5
                         })
@@ -8843,8 +8875,8 @@ spawn(function()
                         end
                     else
                         OrionLib:MakeNotification({
-                            Name = "Xevent Hub",
-                            Content = "You Dont Have SharkMan Karate",
+                            Name = "Xevent Hub BOT",
+                            Content = "Not Have SharkMan Karate",
                             Image = "rbxassetid://14919714384",
                             Time = 5
                         })
@@ -8856,8 +8888,8 @@ spawn(function()
                         end
                     else
                         gOrionLib:MakeNotification({
-                            Name = "Xevent Hub",
-                            Content = "You Dont Have Electric Claw",
+                            Name = "Xevent Hub BOT",
+                            Content = "Not Have Electric Claw",
                             Image = "rbxassetid://14919714384",
                             Time = 5
                         })
@@ -8867,8 +8899,8 @@ spawn(function()
                         if game.Players.LocalPlayer.Backpack:FindFirstChild("Dragon Talon") and game.Players.LocalPlayer.Backpack:FindFirstChild("Dragon Talon").Level.Value >= 400 or game.Players.LocalPlayer.Character:FindFirstChild("Dragon Talon") and game.Players.LocalPlayer.Character:FindFirstChild("Dragon Talon").Level.Value >= 400 then
                             if string.find(game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BuyGodhuman",true), "Bring") then
                                 OrionLib:MakeNotification({
-                                    Name = "Xevent Hub",
-                                    Content = "You Dont Have Enough Material",
+                                    Name = "Xevent Hub BOT",
+                                    Content = "Not Have Enough Material",
                                     Image = "rbxassetid://14919714384",
                                     Time = 5
                                 })
@@ -8879,8 +8911,8 @@ spawn(function()
                         end
                     else
                         OrionLib:MakeNotification({
-                            Name = "Xevent Hub",
-                            Content = "You Dont Have Dragon Talon! ",
+                            Name = "Xevent Hub BOT",
+                            Content = "You Not Have Dragon Talon! ",
                             Image = "rbxassetid://14919714384",
                             Time = 5
                         })
@@ -10593,7 +10625,7 @@ local AdminPos = CFrame.new(-5344.822265625, 423.98541259766, -2725.0930175781)
         end)
     end)
 
-    spawn(function() ---Auto Sea beast
+    spawn(function()
         while wait() do
             if _G.AutoSeaBest then
                    pcall(function()
@@ -10670,7 +10702,7 @@ spawn(function()
     end
 end)
 
-task.spawn(function() --- Auto Sea beast 
+task.spawn(function()
     while wait() do
         pcall(function()
             if _G.Auto_Seabest then
@@ -10756,7 +10788,7 @@ task.spawn(function() --- Auto Sea beast
     end
 end)
 
-spawn(function() --- Auto Kill Player
+spawn(function()
     while wait() do
         if _G.Auto_Kill_Ply then
             pcall(function()
@@ -10812,7 +10844,7 @@ spawn(function()
     end
 end)
 
-spawn(function() --- Aimbot Gun
+spawn(function()
     while task.wait() do
         if _G.Aimbot_Gun and game:GetService("Players").LocalPlayer.Character:FindFirstChild(SelectWeaponGun) then
             pcall(function()
@@ -10872,7 +10904,7 @@ spawn(function()
 	end)
 end)
 
-spawn(function() --- Auto Tween Gear
+spawn(function()
     pcall(function()
         while wait() do
             if _G.TweenMGear then
@@ -10964,7 +10996,7 @@ end
 end
 end)
 
-spawn(function() --- Auto Turn On Race
+spawn(function()
     pcall(function()
         while wait() do
             if _G.AutoRace then
@@ -11041,7 +11073,7 @@ while wait() do
 end
 end)
 
-spawn(function() --- Auto Race v3 Quest
+spawn(function()
     pcall(function()
         while wait() do
             if _G.AutoQuestRace then
@@ -11166,7 +11198,7 @@ end)
 
 local Delay = 1
 
-spawn(function() --- Auto Kill Player
+spawn(function()
 while wait() do
 pcall(function()
 if KillPlayer then
@@ -11213,7 +11245,7 @@ end)
 end
 end)
 
-spawn(function() --- Auto Kill player after trial
+spawn(function()
     while wait() do
         pcall(function()
             if KillPlayer then
@@ -11241,7 +11273,7 @@ spawn(function() --- Auto Kill player after trial
         end
     end)
 
-    spawn(function() --- Auto Turn Instict haki
+    spawn(function()
         while wait() do
             pcall(function()
                 if _G.TurnKen then
@@ -11258,7 +11290,7 @@ spawn(function() --- Auto Kill player after trial
         end
     end)
 
-    spawn(function() --- Hop Server Find Mirage
+    spawn(function()
         while wait() do
         if _G.Hopfinddao then
             if game:GetService("Workspace").Map:FindFirstChild("MysticIsland") or game:GetService("Workspace").Map:FindFirstChild("MysticIsland") then
@@ -11272,7 +11304,7 @@ spawn(function() --- Auto Kill player after trial
         end
     end)
 
-    spawn(function() --- Server Hop Find moons
+    spawn(function()
         while wait() do
             if _G.Hopfindmoon then
             if game:GetService("Lighting").Sky.MoonTextureId=="http://www.roblox.com/asset/?id=9709149052" or game:GetService("Lighting").Sky.MoonTextureId=="http://www.roblox.com/asset/?id=9709149431" then
@@ -11323,7 +11355,7 @@ OrionLib:MakeNotification({
 
 _G.Remove_Effect = true
 
-spawn(function() --- Auto Hop Server if find admin
+spawn(function()
     while wait() do
     for i,v in pairs(game.Players:GetPlayers()) do
         if v.Name == "red_game43" or v.Name == "rip_indra" or v.Name == "Axiore" or v.Name == "Polkster" or v.Name == "wenlocktoad" or v.Name == "Daigrock" or v.Name == "toilamvidamme" or v.Name == "oofficialnoobie" or v.Name == "Uzoth" or v.Name == "Azarth" or v.Name == "arlthmetic" or v.Name == "Death_King" or v.Name == "Lunoven" or v.Name == "TheGreateAced" or v.Name == "rip_fud" or v.Name == "drip_mama" or v.Name == "layandikit12" or v.Name == "Hingoi" then
@@ -11333,7 +11365,7 @@ spawn(function() --- Auto Hop Server if find admin
     end
 end)
 
-spawn(function() --- Remove Effect Function
+spawn(function()
     game:GetService('RunService').Stepped:Connect(function()
         if _G.Remove_Effect then
             for i, v in pairs(game:GetService("ReplicatedStorage").Effect.Container:GetChildren()) do
