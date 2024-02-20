@@ -2543,21 +2543,21 @@ local Window = OrionLib:MakeWindow({Name = "Xevent Hub", HidePremium = false, In
 OrionLib:MakeNotification({
 	Name = "Xevent Hub",
 	Content = "Choose Teams ",
-	Image = "rbxassetid://15992619207",
+	Image = "rbxassetid://16447011266",
 	Time = 7
 })
 
 OrionLib:MakeNotification({
 	Name = "Xevent Hub",
 	Content = "Xevent hub still Beta",
-	Image = "rbxassetid://15992619207",
+	Image = "rbxassetid://16447011266",
 	Time = 25
 })
 
 OrionLib:MakeNotification({
     Name = "Xevent Hub",
     Content = "Please Wait still loading script...,Do not enable any function",
-    Image = "rbxassetid://15992619207",
+    Image = "rbxassetid://16447011266",
     Time = 5
 })
 
@@ -2565,85 +2565,85 @@ OrionLib:MakeNotification({
 
 local W = Window:MakeTab({
     Name = "👋 Welcome",
-    Icon = "rbxassetid://15992619207",
+    Icon = "rbxassetid://16447011266",
     PremiumOnly = false
 })
 
 local M = Window:MakeTab({
     Name = "🏠 Main",
-    Icon = "rbxassetid://15992619207",
+    Icon = "rbxassetid://16447011266",
     PremiumOnly = false
 })
 
 local ST = Window:MakeTab({
     Name = "🛠️ Setting",
-    Icon = "rbxassetid://15992619207",
+    Icon = "rbxassetid://16447011266",
     PremiumOnly = false
 })
 
 local IQ = Window:MakeTab({
     Name = "⚔️ Item & Quest",
-    Icon = "rbxassetid://15992619207",
+    Icon = "rbxassetid://16447011266",
     PremiumOnly = false
 })
 
 local S = Window:MakeTab({
     Name = "📊 Stats",
-    Icon = "rbxassetid://15992619207",
+    Icon = "rbxassetid://16447011266",
     PremiumOnly = false
 })
 
 local E = Window:MakeTab({
     Name = "🔎 ESP",
-    Icon = "rbxassetid://15992619207",
+    Icon = "rbxassetid://16447011266",
     PremiumOnly = false
 })
 
 local RA = Window:MakeTab({
     Name = "🏰 Raid",
-    Icon = "rbxassetid://15992619207",
+    Icon = "rbxassetid://16447011266",
     PremiumOnly = false
 })
 
 local LC = Window:MakeTab({
     Name = "👤Local Players",
-    Icon = "rbxassetid://15992619207",
+    Icon = "rbxassetid://16447011266",
     PremiumOnly = false
 })
 
 local Wld = Window:MakeTab({
     Name = "🌍 World Teleport",
-    Icon = "rbxassetid://15992619207",
+    Icon = "rbxassetid://16447011266",
     PremiumOnly = false
 })
 
 local SV = Window:MakeTab({
     Name = "📈 Status Server",
-    Icon = "rbxassetid://15992619207",
+    Icon = "rbxassetid://16447011266",
     PremiumOnly = false
 })
 
 local D = Window:MakeTab({
     Name = "🍍 Devil Fruit",
-    Icon = "rbxassetid://15992619207",
+    Icon = "rbxassetid://16447011266",
     PremiumOnly = false
 })
 
 local R = Window:MakeTab({
     Name = "🌀 Race V4",
-    Icon = "rbxassetid://15992619207",
+    Icon = "rbxassetid://16447011266",
     PremiumOnly = false
 })
 
 local SH = Window:MakeTab({
     Name = "🛒 Shop",
-    Icon = "rbxassetid://15992619207",
+    Icon = "rbxassetid://16447011266",
     PremiumOnly = false
 })
 
 local C = Window:MakeTab({
     Name = "🔰 Misc",
-    Icon = "rbxassetid://15992619207",
+    Icon = "rbxassetid://16447011266",
     PremiumOnly = false
 })
 
@@ -8340,7 +8340,7 @@ pcall(function()
                 OrionLib:MakeNotification({
                     Name = "Xevent Hub (Notif)",
                     Content = "[EN] : Please cancel the farm level quest (if any)",
-                    Image = "rbxassetid://15992619207",
+                    Image = "rbxassetid://16447011266",
                     Time = 9
                 })
             end
@@ -8658,7 +8658,7 @@ spawn(function()
             OrionLib:MakeNotification({
                 Name = "Xevent Hub",
                 Content = "You Dont Have Enough Belly or Fragment!",
-                Image = "rbxassetid://15992619207",
+                Image = "rbxassetid://16447011266",
                 Time = 5
             })
             end
@@ -10593,7 +10593,7 @@ local AdminPos = CFrame.new(-5344.822265625, 423.98541259766, -2725.0930175781)
         end)
     end)
 
-    spawn(function()
+    spawn(function() ---Auto Sea beast
         while wait() do
             if _G.AutoSeaBest then
                    pcall(function()
@@ -10670,7 +10670,7 @@ spawn(function()
     end
 end)
 
-task.spawn(function()
+task.spawn(function() --- Auto Sea beast 
     while wait() do
         pcall(function()
             if _G.Auto_Seabest then
@@ -10756,7 +10756,7 @@ task.spawn(function()
     end
 end)
 
-spawn(function()
+spawn(function() --- Auto Kill Player
     while wait() do
         if _G.Auto_Kill_Ply then
             pcall(function()
@@ -10812,7 +10812,7 @@ spawn(function()
     end
 end)
 
-spawn(function()
+spawn(function() --- Aimbot Gun
     while task.wait() do
         if _G.Aimbot_Gun and game:GetService("Players").LocalPlayer.Character:FindFirstChild(SelectWeaponGun) then
             pcall(function()
@@ -10872,7 +10872,7 @@ spawn(function()
 	end)
 end)
 
-spawn(function()
+spawn(function() --- Auto Tween Gear
     pcall(function()
         while wait() do
             if _G.TweenMGear then
@@ -10964,7 +10964,7 @@ end
 end
 end)
 
-spawn(function()
+spawn(function() --- Auto Turn On Race
     pcall(function()
         while wait() do
             if _G.AutoRace then
@@ -11041,7 +11041,7 @@ while wait() do
 end
 end)
 
-spawn(function()
+spawn(function() --- Auto Race v3 Quest
     pcall(function()
         while wait() do
             if _G.AutoQuestRace then
@@ -11166,7 +11166,7 @@ end)
 
 local Delay = 1
 
-spawn(function()
+spawn(function() --- Auto Kill Player
 while wait() do
 pcall(function()
 if KillPlayer then
@@ -11213,7 +11213,7 @@ end)
 end
 end)
 
-spawn(function()
+spawn(function() --- Auto Kill player after trial
     while wait() do
         pcall(function()
             if KillPlayer then
@@ -11241,7 +11241,7 @@ spawn(function()
         end
     end)
 
-    spawn(function()
+    spawn(function() --- Auto Turn Instict haki
         while wait() do
             pcall(function()
                 if _G.TurnKen then
@@ -11258,7 +11258,7 @@ spawn(function()
         end
     end)
 
-    spawn(function()
+    spawn(function() --- Hop Server Find Mirage
         while wait() do
         if _G.Hopfinddao then
             if game:GetService("Workspace").Map:FindFirstChild("MysticIsland") or game:GetService("Workspace").Map:FindFirstChild("MysticIsland") then
@@ -11272,7 +11272,7 @@ spawn(function()
         end
     end)
 
-    spawn(function()
+    spawn(function() --- Server Hop Find moons
         while wait() do
             if _G.Hopfindmoon then
             if game:GetService("Lighting").Sky.MoonTextureId=="http://www.roblox.com/asset/?id=9709149052" or game:GetService("Lighting").Sky.MoonTextureId=="http://www.roblox.com/asset/?id=9709149431" then
@@ -11280,7 +11280,7 @@ spawn(function()
                 OrionLib:MakeNotification({
                     Name = "Xevent Hub",
                     Content = "Turn Off Hop Find Moon Please",
-                    Image = "rbxassetid://15992619207",
+                    Image = "rbxassetid://16447011266",
                     Time = 5
                 })
             elseif game:GetService("Lighting").Sky.MoonTextureId=="http://www.roblox.com/asset/?id=9709143733" then
@@ -11288,7 +11288,7 @@ spawn(function()
                 OrionLib:MakeNotification({
                     Name = "Xevent Hub",
                     Content = "Hop Server",
-                    Image = "rbxassetid://15992619207",
+                    Image = "rbxassetid://16447011266",
                     Time = 5
                 })
             elseif game:GetService("Lighting").Sky.MoonTextureId=="http://www.roblox.com/asset/?id=9709150401" then
@@ -11296,7 +11296,7 @@ spawn(function()
                 OrionLib:MakeNotification({
                     Name = "Xevent Hub",
                     Content = "Hop Server",
-                    Image = "rbxassetid://15992619207",
+                    Image = "rbxassetid://16447011266",
                     Time = 5
                 })
             elseif game:GetService("Lighting").Sky.MoonTextureId=="http://www.roblox.com/asset/?id=9709149680" then
@@ -11304,7 +11304,7 @@ spawn(function()
                 OrionLib:MakeNotification({
                     Name = "Xevent Hub",
                     Content = "Hop Server",
-                    Image = "rbxassetid://15992619207",
+                    Image = "rbxassetid://16447011266",
                     Time = 5
                 })
             else
@@ -11317,13 +11317,13 @@ spawn(function()
 OrionLib:MakeNotification({
         Name = "Xevent Hub",
         Content = "Loading script complete!, You can now enable the function!",
-        Image = "rbxassetid://15992619207",
+        Image = "rbxassetid://16447011266",
         Time = 5
     })
 
 _G.Remove_Effect = true
 
-spawn(function()
+spawn(function() --- Auto Hop Server if find admin
     while wait() do
     for i,v in pairs(game.Players:GetPlayers()) do
         if v.Name == "red_game43" or v.Name == "rip_indra" or v.Name == "Axiore" or v.Name == "Polkster" or v.Name == "wenlocktoad" or v.Name == "Daigrock" or v.Name == "toilamvidamme" or v.Name == "oofficialnoobie" or v.Name == "Uzoth" or v.Name == "Azarth" or v.Name == "arlthmetic" or v.Name == "Death_King" or v.Name == "Lunoven" or v.Name == "TheGreateAced" or v.Name == "rip_fud" or v.Name == "drip_mama" or v.Name == "layandikit12" or v.Name == "Hingoi" then
@@ -11333,7 +11333,7 @@ spawn(function()
     end
 end)
 
-spawn(function()
+spawn(function() --- Remove Effect Function
     game:GetService('RunService').Stepped:Connect(function()
         if _G.Remove_Effect then
             for i, v in pairs(game:GetService("ReplicatedStorage").Effect.Container:GetChildren()) do
@@ -11350,6 +11350,6 @@ OrionLib:Init()
 OrionLib:MakeNotification({
     Name = "Xevent Hub",
     Content = "Loading Config Complete!!",
-    Image = "rbxassetid://15992619207",
+    Image = "rbxassetid://16447011266",
     Time = 5
 })
