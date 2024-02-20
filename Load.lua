@@ -2370,12 +2370,12 @@ local CamShake = require(game.ReplicatedStorage.Util.CameraShaker)
 CamShake:Stop()
 
     HttpService = game:GetService("HttpService")
-    local i = "Xevent Hub"
+    local i = "Heiskso Hub"
     local j = "-BloxFruit.json"
     local l = game.Players.LocalPlayer.Name .. j
     if Adel then
         HttpService = game:GetService("HttpService")
-        local i = "Xevent Hub"
+        local i = "Heiskso Hub"
         local j = "-BloxFruit.json"
         local l = game.Players.LocalPlayer.Name .. j
     end
@@ -2530,33 +2530,39 @@ spawn(function()
         task.wait()
     until game.Players.LocalPlayer and game.Players.LocalPlayer.Team ~= nil 
     wait(1.5)
-    require(game.ReplicatedStorage.Notification).new("<Color=Red>Xevent Hub<Color=/>"):Display()
+    require(game.ReplicatedStorage.Notification).new("<Color=Red>dsc.gg/heiskso<Color=/>"):Display()
+    wait(.5)
+    require(game.ReplicatedStorage.Notification).new("<Color=Red>Heiskso Hub Premium!<Color=/>"):Display()
     wait(.14)
-    require(game.ReplicatedStorage.Notification).new("<Color=Yellow>Discord : https://discord.com/invite/P4X9uXRRRc <Color=/>"):Display()
+    require(game.ReplicatedStorage.Notification).new("<Color=Yellow>Hãy sử dụng Fluxus để có trải nghiệm tốt!!<Color=/>"):Display()
+    wait(.24)
+    require(game.ReplicatedStorage.Notification).new("<Color=Yellow>Tham gia disocrd để cập nhật thông tin mới nhất nhé<Color=/>"):Display()
+    wait(.29)
+    require(game.ReplicatedStorage.Notification).new("<Color=Yellow>Channel : dsc.gg/heiskso <Color=/>"):Display()
     wait(.36)
 end)
 
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
-local Window = OrionLib:MakeWindow({Name = "Xevent Hub", HidePremium = false, IntroText = "Xevent Library", SaveConfig = true, ConfigFolder = "Xevent Hub"})
+local Window = OrionLib:MakeWindow({Name = "Heiskso Hub", HidePremium = false, IntroText = "Heiskso Library", SaveConfig = true, ConfigFolder = "Heiskso Hub"})
 
 OrionLib:MakeNotification({
-	Name = "Xevent Hub",
+	Name = "Heiskso Hub",
 	Content = "Choose Teams Bro?",
-	Image = "rbxassetid://16447011266",
+	Image = "rbxassetid://15992619207",
 	Time = 7
 })
 
 OrionLib:MakeNotification({
-	Name = "Xevent Hub",
-	Content = "..",
-	Image = "rbxassetid://16447011266",
+	Name = "Heiskso Hub",
+	Content = "Heiskso Hub Not Skidder, Please don't says",
+	Image = "rbxassetid://15992619207",
 	Time = 25
 })
 
 OrionLib:MakeNotification({
-    Name = "Xevent Hub",
-    Content = "Please Wait loading script..,Do not enable any function",
-    Image = "rbxassetid://16447011266",
+    Name = "Heiskso Hub",
+    Content = "Please Wait loading script...,Do not enable any function",
+    Image = "rbxassetid://15992619207",
     Time = 5
 })
 
@@ -2564,85 +2570,85 @@ OrionLib:MakeNotification({
 
 local W = Window:MakeTab({
     Name = "👋 Welcome",
-    Icon = "rbxassetid://16447011266",
+    Icon = "rbxassetid://15992619207",
     PremiumOnly = false
 })
 
 local M = Window:MakeTab({
     Name = "🏠 General",
-    Icon = "rbxassetid://16447011266",
+    Icon = "rbxassetid://15992619207",
     PremiumOnly = false
 })
 
 local ST = Window:MakeTab({
     Name = "🛠️ Setting",
-    Icon = "rbxassetid://16447011266",
+    Icon = "rbxassetid://15992619207",
     PremiumOnly = false
 })
 
 local IQ = Window:MakeTab({
     Name = "⚔️ Item & Quest",
-    Icon = "rbxassetid://16447011266",
+    Icon = "rbxassetid://15992619207",
     PremiumOnly = false
 })
 
 local S = Window:MakeTab({
     Name = "📊 Stats",
-    Icon = "rbxassetid://16447011266",
+    Icon = "rbxassetid://15992619207",
     PremiumOnly = false
 })
 
 local E = Window:MakeTab({
     Name = "🔎 ESP",
-    Icon = "rbxassetid://16447011266",
+    Icon = "rbxassetid://15992619207",
     PremiumOnly = false
 })
 
 local RA = Window:MakeTab({
-    Name = "🏰 Raid",
-    Icon = "rbxassetid://16447011266",
+    Name = "🎆 Raid",
+    Icon = "rbxassetid://15992619207",
     PremiumOnly = false
 })
 
 local LC = Window:MakeTab({
-    Name = "👤 Local Players",
-    Icon = "rbxassetid://16447011266",
+    Name = "🙆‍♂️ Local Players",
+    Icon = "rbxassetid://15992619207",
     PremiumOnly = false
 })
 
 local Wld = Window:MakeTab({
     Name = "🌍 World Teleport",
-    Icon = "rbxassetid://16447011266",
+    Icon = "rbxassetid://15992619207",
     PremiumOnly = false
 })
 
 local SV = Window:MakeTab({
     Name = "📈 Status Sever",
-    Icon = "rbxassetid://16447011266",
+    Icon = "rbxassetid://15992619207",
     PremiumOnly = false
 })
 
 local D = Window:MakeTab({
-    Name = "🍎 Devil Fruit",
-    Icon = "rbxassetid://16447011266",
+    Name = "🍍 Devil Fruit",
+    Icon = "rbxassetid://15992619207",
     PremiumOnly = false
 })
 
 local R = Window:MakeTab({
-    Name = "🌀 Race V4",
-    Icon = "rbxassetid://16447011266",
+    Name = "☣️ Race V4",
+    Icon = "rbxassetid://15992619207",
     PremiumOnly = false
 })
 
 local SH = Window:MakeTab({
     Name = "🛒 Shop",
-    Icon = "rbxassetid://16447011266",
+    Icon = "rbxassetid://15992619207",
     PremiumOnly = false
 })
 
 local C = Window:MakeTab({
     Name = "🔰 Misc",
-    Icon = "rbxassetid://16447011266",
+    Icon = "rbxassetid://15992619207",
     PremiumOnly = false
 })
 
@@ -2651,7 +2657,17 @@ local Section = W:AddSection({
     Name = "Credit"
 })
 
-W:AddLabel("Script By Xevent")
+
+W:AddLabel("Script By Heiskso")
+
+local Section = W:AddSection({
+    Name = "Update"
+})
+
+W:AddLabel("[+] Heiskso Hub is back!")
+W:AddLabel("[+] I Not Skidder!")
+W:AddLabel("[+] I Will overcome Banana Hub,Macu Hub!!!")
+W:AddLabel("[+] Load Script Faster!")
 
 local Section = W:AddSection({
     Name = "Status"
@@ -2746,10 +2762,10 @@ local locallv = W:AddLabel("Level")
         Name = "Status Hack"
     })
     
-    local LevelFarmFarm W:AddLabel("Kaitun : ❌")
-    W:AddLabel("Config Save : ❌")
+    local LevelFarmFarm W:AddLabel("Kaitun : Đell có(sắp có)")
+    W:AddLabel("Config Save : Comming Son...")
     local Farmfast = W:AddLabel("Farm Fast : ❌")
-    local Bypass = W:AddLabel("Bypass : ❌")
+    local Bypass = W:AddLabel("Bypass ❌")
     local Section = W:AddSection({
         Name = "World"
     })
@@ -2911,11 +2927,11 @@ task.spawn(function()
 
 if World2 and World1 then
     local Section = M:AddSection({
-        Name = "Boost"
+        Name = "BOOTS"
     })
 
     M:AddButton({
-        Name = "Boost FPS",
+        Name = "BOOST FPS",
         Callback = function()
             pcall(function()
                 game:GetService("Lighting").FantasySky:Destroy()
@@ -3336,11 +3352,13 @@ Farmfasttoggle = M:AddToggle({
 })
 
 local Section = M:AddSection({
-    Name = "Kaitun ( Bugged )"
+    Name = "Kaitun Met Vaiz"
 })
 
+M:AddParagraph("Kaitun/Cantay","Kaitun bản này đell khác gì bản kia.")
+
 M:AddToggle({
-    Name = "Kaitun [Bugged]",
+    Name = "Kaitun[Ko có kill players]",
     Default = false,
     Flag = "Kaitun",
     Save = true,
@@ -3364,7 +3382,7 @@ M:AddToggle({
 })
 
 M:AddToggle({
-    Name = "Auto Click",
+    Name = "Auto Click[Kick]",
     Default = false,
     Flag = "Auto Click",
     Save = true,
@@ -3464,7 +3482,7 @@ M:AddToggle({
     })
 
 TweenChest = M:AddToggle({
-        Name = "Auto Chest [Tween]",
+        Name = "Auto Chest [MUP]",
         Default = false,
         Flag = "Auto Chest",
         Save = true,
@@ -3485,9 +3503,9 @@ TweenChest = M:AddToggle({
     })
 
 M:AddToggle({
-    Name = "Stop Only Fist Of Darkness or God's Chalice",
+    Name = "Stop Only Dark Key or God's Chalice",
     Default = false,
-    Flag = "Stop Only First Of Darkness or God's Chalice",
+    Flag = "Stop Only Dark Key or God's Chalice",
     Save = true,
     Callback = function(Value)
         _G.StopChest = Value
@@ -3644,6 +3662,8 @@ local EliteProgress = M:AddLabel("")
 local Section = M:AddSection({
     Name = "Boss"
 })
+
+M:AddParagraph("Auto Farm Boss :","Chờ Update thôi ae!!!")
 
     local Section = M:AddSection({
         Name = "Observation Haki"
@@ -4125,6 +4145,8 @@ IQ:AddToggle({
             Name = "ArenaTrainer"
         })
 
+        IQ:AddLabel("Cho thằng nào đell hiểu thì đây là tự động đánh hình nộm")
+
         IQ:AddToggle({
             Name = "Automatically hit the dummy",
             Default = false,
@@ -4172,11 +4194,11 @@ ToggleHallow = IQ:AddToggle({
         })
 
         local Section = IQ:AddSection({
-            Name = "Dark Dagger"
+            Name = "Dark Dragger"
         })
 
         IQ:AddToggle({
-            Name = "Auto Dark Dagger",
+            Name = "Auto Dark Dragger",
             Default = false,
             Flag = "Auto Dark",
             Save = true,
@@ -4187,7 +4209,7 @@ ToggleHallow = IQ:AddToggle({
         })
 
         IQ:AddToggle({
-            Name = "Auto Dark Dagger[HOP]",
+            Name = "Auto Dark Dragger[HOP]",
             Default = false,
             Flag = "Auto Dark[HOP]",
             Save = true,
@@ -4257,13 +4279,13 @@ spawn(function()
 end)
 
 local Section = IQ:AddSection({
-        Name = "Mirage Menu"
+        Name = "Mirrage Menu"
     })
 
 IQ:AddToggle({
-    Name = "Auto Summon Mirage Island",
+    Name = "Auto Summon and Find Mirrage Island",
     Default = false,
-    Flag = "Auto Mirage",
+    Flag = "Auto Mirrage",
     Save = true,
     Callback = function(Value)
         _G.dao = Value
@@ -4337,7 +4359,7 @@ IQ:AddToggle({
 IQ:AddToggle({
     Name = "Find Mirrage[HOP]",
     Default = false,
-    Flag = "Auto Mirage2",
+    Flag = "Auto Mirrage2",
     Save = true,
     Callback = function(Value)
         _G.Hop =  Value
@@ -5262,11 +5284,11 @@ LC:AddToggle({
 })
 
 local Section = LC:AddSection({
-    Name = "Mirage Menu"
+    Name = "Teleport Mirrage"
 })
 
 LC:AddButton({
-    Name = "Remove Frog",
+    Name = "Revome Frog",
     Callback = function()
         game:GetService("Lighting").LightingLayers:Destroy()
         game:GetService("Lighting").Sky:Destroy()
@@ -5418,10 +5440,10 @@ spawn(function()
             end)
 
             local Section = SV:AddSection({
-                Name = "Ancient One Check"
+                Name = "Anclient One Check"
             })
 
-            local bL = SV:AddLabel("Ancient One Status : " .. tostring(CheckAcientOneStatus()))
+            local bL = SV:AddLabel("Anclient One Status : " .. tostring(CheckAcientOneStatus()))
 
 local Section = SV:AddSection({
     Name = "Elite Check"
@@ -5512,7 +5534,7 @@ SV:AddToggle({
 })
 
 SV:AddToggle({
-	Name = "Hop Find Mirage",
+	Name = "Hop Find Mirrage",
 	Default = false,
     Flag = "FindMrg",
     Save = true,
@@ -5876,7 +5898,7 @@ spawn(function()
 end)
 
 MoveCamTooMoonToggle = R:AddToggle({
-    Name = "Auto Look Moon",
+    Name = "Move Cam to Moon",
     Default = false,
     Flag = "Move Cam to Moon",
     Save = true,
@@ -6074,7 +6096,7 @@ SH:AddButton({
 })
 
 SH:AddButton({
-    Name = "Electro",
+    Name = "Electrol",
     Callback = function()
         game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BuyElectro")
       end    
@@ -6136,13 +6158,6 @@ SH:AddButton({
     Name = "Godhuman",
     Callback = function()
         game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BuyGodhuman")
-      end    
-})
-
-SH:AddButton({
-    Name = "Sanguine Art",
-    Callback = function()
-        game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BuySanguineArt")
       end    
 })
 
@@ -8364,15 +8379,15 @@ pcall(function()
         if _G.AutoEliteHunter then
             if game:GetService("Players").LocalPlayer.PlayerGui.Main.Quest.Visible == true then
                 OrionLib:MakeNotification({
-                    Name = "Xevent Hub(Noitification)",
+                    Name = "Heiskso Hub(Noitification)",
                     Content = "[EN] : Please cancel the farrm level quest (if any)",
-                    Image = "rbxassetid://16447011266",
+                    Image = "rbxassetid://15992619207",
                     Time = 9
                 })
                 OrionLib:MakeNotification({
-                    Name = "Xevent Hub(Noitification)",
+                    Name = "Heiskso Hub(Noitification)",
                     Content = "[VN] : Làm ơn hủy nhiệm vụ farrm level(nếu có)",
-                    Image = "rbxassetid://16447011266",
+                    Image = "rbxassetid://15992619207",
                     Time = 9
                 })
             end
@@ -8539,7 +8554,7 @@ spawn(function()
             if _G.AutoObservation then
                 if game:GetService("Players").LocalPlayer.VisionRadius.Value >= 3000 then
                     OrionLib:MakeNotification({
-                        Name = "Xevent Hub BOT",
+                        Name = "Heiskso Hub BOT",
                         Content = "!!You Are Max Point!!",
                         Image = "rbxassetid://14919714384",
                         Time = 5
@@ -8688,9 +8703,9 @@ spawn(function()
         if Mybeli <= 2500000 or MyFragment <= 5000 then
             wait(2.0)
             OrionLib:MakeNotification({
-                Name = "Xevent Hub",
+                Name = "Heiskso Hub",
                 Content = "You not have beli or fragment!",
-                Image = "rbxassetid://16447011266",
+                Image = "rbxassetid://15992619207",
                 Time = 5
             })
             end
@@ -8849,7 +8864,7 @@ spawn(function()
                         end
                     else
                         OrionLib:MakeNotification({
-                            Name = "Xevent Hub BOT",
+                            Name = "Heiskso Hub BOT",
                             Content = "Not Have Superhuman",
                             Image = "rbxassetid://14919714384",
                             Time = 5
@@ -8862,7 +8877,7 @@ spawn(function()
                         end
                     else
                         OrionLib:MakeNotification({
-                            Name = "Xevent Hub BOT",
+                            Name = "Heiskso Hub BOT",
                             Content = "Not Have Death Step",
                             Image = "rbxassetid://14919714384",
                             Time = 5
@@ -8875,7 +8890,7 @@ spawn(function()
                         end
                     else
                         OrionLib:MakeNotification({
-                            Name = "Xevent Hub BOT",
+                            Name = "Heiskso Hub BOT",
                             Content = "Not Have SharkMan Karate",
                             Image = "rbxassetid://14919714384",
                             Time = 5
@@ -8888,7 +8903,7 @@ spawn(function()
                         end
                     else
                         gOrionLib:MakeNotification({
-                            Name = "Xevent Hub BOT",
+                            Name = "Heiskso Hub BOT",
                             Content = "Not Have Electric Claw",
                             Image = "rbxassetid://14919714384",
                             Time = 5
@@ -8899,7 +8914,7 @@ spawn(function()
                         if game.Players.LocalPlayer.Backpack:FindFirstChild("Dragon Talon") and game.Players.LocalPlayer.Backpack:FindFirstChild("Dragon Talon").Level.Value >= 400 or game.Players.LocalPlayer.Character:FindFirstChild("Dragon Talon") and game.Players.LocalPlayer.Character:FindFirstChild("Dragon Talon").Level.Value >= 400 then
                             if string.find(game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BuyGodhuman",true), "Bring") then
                                 OrionLib:MakeNotification({
-                                    Name = "Xevent Hub BOT",
+                                    Name = "Heiskso Hub BOT",
                                     Content = "Not Have Enough Material",
                                     Image = "rbxassetid://14919714384",
                                     Time = 5
@@ -8911,7 +8926,7 @@ spawn(function()
                         end
                     else
                         OrionLib:MakeNotification({
-                            Name = "Xevent Hub BOT",
+                            Name = "Heiskso Hub BOT",
                             Content = "You Not Have Dragon Talon! ",
                             Image = "rbxassetid://14919714384",
                             Time = 5
@@ -11310,33 +11325,33 @@ spawn(function()
             if game:GetService("Lighting").Sky.MoonTextureId=="http://www.roblox.com/asset/?id=9709149052" or game:GetService("Lighting").Sky.MoonTextureId=="http://www.roblox.com/asset/?id=9709149431" then
                 wait(2.0)
                 OrionLib:MakeNotification({
-                    Name = "Xevent Hub",
+                    Name = "Heiskso Hub",
                     Content = "Turn Off Hop Find Moon Please",
-                    Image = "rbxassetid://16447011266",
+                    Image = "rbxassetid://15992619207",
                     Time = 5
                 })
             elseif game:GetService("Lighting").Sky.MoonTextureId=="http://www.roblox.com/asset/?id=9709143733" then
                 Hop()
                 OrionLib:MakeNotification({
-                    Name = "Xevent Hub",
+                    Name = "Heiskso Hub",
                     Content = "Hop Server",
-                    Image = "rbxassetid://16447011266",
+                    Image = "rbxassetid://15992619207",
                     Time = 5
                 })
             elseif game:GetService("Lighting").Sky.MoonTextureId=="http://www.roblox.com/asset/?id=9709150401" then
                 Hop()
                 OrionLib:MakeNotification({
-                    Name = "Xevent Hub",
+                    Name = "Heiskso Hub",
                     Content = "Hop Server",
-                    Image = "rbxassetid://16447011266",
+                    Image = "rbxassetid://15992619207",
                     Time = 5
                 })
             elseif game:GetService("Lighting").Sky.MoonTextureId=="http://www.roblox.com/asset/?id=9709149680" then
                 Hop()
                 OrionLib:MakeNotification({
-                    Name = "Xevent Hub",
+                    Name = "Heiskso Hub",
                     Content = "Hop Server",
-                    Image = "rbxassetid://16447011266",
+                    Image = "rbxassetid://15992619207",
                     Time = 5
                 })
             else
@@ -11347,9 +11362,9 @@ spawn(function()
     end)
 
 OrionLib:MakeNotification({
-        Name = "Xevent Hub",
+        Name = "Heiskso Hub",
         Content = "Loading script complete!, You can now enable the function!",
-        Image = "rbxassetid://16447011266",
+        Image = "rbxassetid://15992619207",
         Time = 5
     })
 
@@ -11380,8 +11395,8 @@ end)
 OrionLib:Init()
 
 OrionLib:MakeNotification({
-    Name = "Xevent Hub",
+    Name = "Heiskso Hub",
     Content = "Loading Config Complete!!",
-    Image = "rbxassetid://16447011266",
+    Image = "rbxassetid://15992619207",
     Time = 5
 })
