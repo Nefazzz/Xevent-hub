@@ -1,4 +1,3 @@
-
 local CoreGui = game.CoreGui
 local UserInputService = game:GetService("UserInputService")
 local TweenService = game:GetService("TweenService")
@@ -88,7 +87,7 @@ function CreateGUiOpen()
 	AXCFrame.TextColor3 = Color3.fromRGB(0, 0, 0)
 	AXCFrame.TextSize = 14.000
 	AXCFrame.MouseButton1Click:Connect(function()
-		CoreGui.EvoHub.Main.Position = UDim2.new(0.41776669, -314, 0.194183752, -85)
+		CoreGui.XeventHub.Main.Position = UDim2.new(0.41776669, -314, 0.194183752, -85)
 		CoreGui.AXCScreenGui:Destroy()
 	end)
 
@@ -106,7 +105,7 @@ end
 
 function Library:CreateWindow(name)
 
-	local EvoHub = Instance.new("ScreenGui")
+	local XeventHub = Instance.new("ScreenGui")
 	local Main = Instance.new("Frame")
 	local Drag = Instance.new("Frame")
 	local Title = Instance.new("Frame")
@@ -124,12 +123,12 @@ function Library:CreateWindow(name)
 	local TabGrid = Instance.new("UIGridLayout")
 	local ContentContainer = Instance.new("Folder")
 
-	EvoHub.Name = "EvoHub"
-	EvoHub.Parent = CoreGui
-	EvoHub.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+	XeventHub.Name = "XeventHub"
+	XeventHub.Parent = CoreGui
+	XeventHub.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 	Main.Name = "Main"
-	Main.Parent = EvoHub
+	Main.Parent = XeventHub
 	Main.BackgroundColor3 = Color3.fromRGB(15, 16, 17)
 	Main.BackgroundTransparency = 0
 	Main.BorderColor3 = Color3.fromRGB(27, 42, 53)
@@ -242,7 +241,7 @@ function Library:CreateWindow(name)
 	Button_Close.ImageRectOffset = Vector2.new(924, 724)
 	Button_Close.ImageRectSize = Vector2.new(36, 36)
 	Button_Close.MouseButton1Click:Connect(function()
-		game.CoreGui.EvoHub:Destroy()
+		game.CoreGui.XeventHub:Destroy()
 	end)    
 
 	Logo.Name = "Logo"
@@ -253,7 +252,7 @@ function Library:CreateWindow(name)
 	Logo.BorderSizePixel = 0
 	Logo.Position = UDim2.new(0, 0, -0.0269238297, 0)
 	Logo.Size = UDim2.new(0, 38, 0, 38)
-	Logo.Image = "rbxassetid://13990972098"
+	Logo.Image = "rbxassetid://16447011266"
 
 	TabContainer.Name = "TabContainer"
 	TabContainer.Parent = Main
@@ -1323,13 +1322,13 @@ function Library:CreateWindow(name)
 	return TabCreate
 end
 
-local Win = Library:CreateWindow('Evo Hub | Main') 
+local Win = Library:CreateWindow('Xevent Hub | Beta') 
 local Tab  = Win:CreateTab('Main')
-local TestL = Tab:Label("ÃƒXC")
-Tab:Button("dimemaymatday","AXC Omn Top Lua Code",function()
-    print("cha may ngu")
+local TestL = Tab:Label("Testing")
+Tab:Button("Button",function()
+    print("This is button")
 end)
-Tab:Toggle("dimemaymatday","AXC Omn Top Lua Code",false,function(v)
+Tab:Toggle("Toggle",false,function(v)
     _G.Test = v
 end)
 
@@ -1341,11 +1340,11 @@ spawn(function()
     end
 end)
 
-Tab:TextBox("Test","Test",function(v)
+Tab:TextBox("Textbox","Test",function(v)
     print(v)
 end)
 
-Tab:Slider("Slider","NGu",1,100,45,function(value)
+Tab:Slider("Slider",1,100,45,function(value)
     _G.Kill_At = value
 end)
 
@@ -1358,9 +1357,9 @@ Tab:DropDown("DropDown","Test",{"8","6"},function(v)
 end)
 
 
-local Tab2  = Win:CreateTab('Main3')
+local Tab2  = Win:CreateTab('Tab2')
 
-Tab2:Toggle("dimemaymatday","AXC Omn Top Lua Code",false,function(v)
+Tab2:Toggle("Toggle",false,function(v)
     _G.Test = v
 end)
 
