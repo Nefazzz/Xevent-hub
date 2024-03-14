@@ -67,36 +67,36 @@ end
 
 function CreateGUiOpen()
 
-	local XVTScreenGui = Instance.new("ScreenGui")
-	local XVTFrame = Instance.new("TextButton")
-	local XVTCor = Instance.new("UICorner")
+	local AXCScreenGui = Instance.new("ScreenGui")
+	local AXCFrame = Instance.new("TextButton")
+	local AXCCor = Instance.new("UICorner")
 	local MODILEMAGE = Instance.new("ImageLabel")
 
-	XVTScreenGui.Name = "XVTScreenGui"
-	XVTScreenGui.Parent = CoreGui
-	XVTScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+	AXCScreenGui.Name = "AXCScreenGui"
+	AXCScreenGui.Parent = CoreGui
+	AXCScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
-	XVTFrame.Name = "XVTFrame"
-	XVTFrame.Parent = XVTScreenGui
-	XVTFrame.BackgroundColor3 = Color3.fromRGB(31, 31, 31)
-	XVTFrame.BorderSizePixel = 0
-	XVTFrame.Draggable = true
-	XVTFrame.Position = UDim2.new(0.120833337, 0, 0.0952890813, 0)
-	XVTFrame.Size = UDim2.new(0, 50, 0, 50)
-	XVTFrame.Font = Enum.Font.SourceSans
-	XVTFrame.Text = ""
-	XVTFrame.TextColor3 = Color3.fromRGB(0, 0, 0)
-	XVTFrame.TextSize = 14.000
-	XVTFrame.MouseButton1Click:Connect(function()
-		CoreGui.XeventHub.Main.Position = UDim2.new(0.41776669, -314, 0.194183752, -85)
-		CoreGui.XVTScreenGui:Destroy()
+	AXCFrame.Name = "AXCFrame"
+	AXCFrame.Parent = AXCScreenGui
+	AXCFrame.BackgroundColor3 = Color3.fromRGB(31, 31, 31)
+	AXCFrame.BorderSizePixel = 0
+	AXCFrame.Draggable = true
+	AXCFrame.Position = UDim2.new(0.120833337, 0, 0.0952890813, 0)
+	AXCFrame.Size = UDim2.new(0, 50, 0, 50)
+	AXCFrame.Font = Enum.Font.SourceSans
+	AXCFrame.Text = ""
+	AXCFrame.TextColor3 = Color3.fromRGB(0, 0, 0)
+	AXCFrame.TextSize = 14.000
+	AXCFrame.MouseButton1Click:Connect(function()
+		CoreGui.EvoHub.Main.Position = UDim2.new(0.41776669, -314, 0.194183752, -85)
+		CoreGui.AXCScreenGui:Destroy()
 	end)
 
-	XVTCor.Name = "XVTCor"
-	XVTCor.Parent = XVTFrame
+	AXCCor.Name = "AXCCor"
+	AXCCor.Parent = AXCFrame
 
 	MODILEMAGE.Name = "MODILEMAGE"
-	MODILEMAGE.Parent = XVTFrame
+	MODILEMAGE.Parent = AXCFrame
 	MODILEMAGE.BackgroundColor3 = Color3.fromRGB(192, 192, 192)
 	MODILEMAGE.BackgroundTransparency = 1.000
 	MODILEMAGE.BorderSizePixel = 0
@@ -106,7 +106,7 @@ end
 
 function Library:CreateWindow(name)
 
-	local XeventHub = Instance.new("ScreenGui")
+	local EvoHub = Instance.new("ScreenGui")
 	local Main = Instance.new("Frame")
 	local Drag = Instance.new("Frame")
 	local Title = Instance.new("Frame")
@@ -124,12 +124,12 @@ function Library:CreateWindow(name)
 	local TabGrid = Instance.new("UIGridLayout")
 	local ContentContainer = Instance.new("Folder")
 
-	XeventHub.Name = "Xevent Hub"
-	XeventHub.Parent = CoreGui
-	XeventHub.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+	EvoHub.Name = "EvoHub"
+	EvoHub.Parent = CoreGui
+	EvoHub.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 	Main.Name = "Main"
-	Main.Parent = XeventHub
+	Main.Parent = EvoHub
 	Main.BackgroundColor3 = Color3.fromRGB(15, 16, 17)
 	Main.BackgroundTransparency = 0
 	Main.BorderColor3 = Color3.fromRGB(27, 42, 53)
@@ -242,7 +242,7 @@ function Library:CreateWindow(name)
 	Button_Close.ImageRectOffset = Vector2.new(924, 724)
 	Button_Close.ImageRectSize = Vector2.new(36, 36)
 	Button_Close.MouseButton1Click:Connect(function()
-		game.CoreGui.XeventHub:Destroy()
+		game.CoreGui.EvoHub:Destroy()
 	end)    
 
 	Logo.Name = "Logo"
@@ -1323,13 +1323,13 @@ function Library:CreateWindow(name)
 	return TabCreate
 end
 
-local Win = Library:CreateWindow('Xevent Hub | Beta') 
+local Win = Library:CreateWindow('Evo Hub | Main') 
 local Tab  = Win:CreateTab('Main')
-local TestL = Tab:Label("Xevent Hub")
-Tab:Button("Test",function()
-    print("Xevent hub | Beta")
+local TestL = Tab:Label("ÃƒXC")
+Tab:Button("dimemaymatday","AXC Omn Top Lua Code",function()
+    print("cha may ngu")
 end)
-Tab:Toggle("Test",false,function(v)
+Tab:Toggle("dimemaymatday","AXC Omn Top Lua Code",false,function(v)
     _G.Test = v
 end)
 
@@ -1345,7 +1345,7 @@ Tab:TextBox("Test","Test",function(v)
     print(v)
 end)
 
-Tab:Slider("Slider","test",1,100,45,function(value)
+Tab:Slider("Slider","NGu",1,100,45,function(value)
     _G.Kill_At = value
 end)
 
@@ -1358,9 +1358,9 @@ Tab:DropDown("DropDown","Test",{"8","6"},function(v)
 end)
 
 
-local Tab2  = Win:CreateTab('New tab')
+local Tab2  = Win:CreateTab('Main3')
 
-Tab2:Toggle("test",false,function(v)
+Tab2:Toggle("dimemaymatday","AXC Omn Top Lua Code",false,function(v)
     _G.Test = v
 end)
 
