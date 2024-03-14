@@ -100,7 +100,7 @@ function CreateGUiOpen()
 	MODILEMAGE.BackgroundTransparency = 1.000
 	MODILEMAGE.BorderSizePixel = 0
 	MODILEMAGE.Size = UDim2.new(0, 50, 0, 50)
-	MODILEMAGE.Image = "rbxassetid://13990972098"
+	MODILEMAGE.Image = "rbxassetid://16447011266"
 end
 
 function Library:CreateWindow(name)
@@ -1322,13 +1322,13 @@ function Library:CreateWindow(name)
 	return TabCreate
 end
 
-local Win = Library:CreateWindow('Xevent Hub | Beta') 
+local Win = Library:CreateWindow('Xevent Hub | Main') 
 local Tab  = Win:CreateTab('Main')
-local TestL = Tab:Label("Testing")
-Tab:Button("Button",function()
-    print("This is button")
+local TestL = Tab:Label("ÃƒXC")
+Tab:Button("dimemaymatday","AXC Omn Top Lua Code",function()
+    print("cha may ngu")
 end)
-Tab:Toggle("Toggle",false,function(v)
+Tab:Toggle("dimemaymatday","AXC Omn Top Lua Code",false,function(v)
     _G.Test = v
 end)
 
@@ -1340,11 +1340,11 @@ spawn(function()
     end
 end)
 
-Tab:TextBox("Textbox","Test",function(v)
+Tab:TextBox("Test","Test",function(v)
     print(v)
 end)
 
-Tab:Slider("Slider",1,100,45,function(value)
+Tab:Slider("Slider","NGu",1,100,45,function(value)
     _G.Kill_At = value
 end)
 
@@ -1357,9 +1357,9 @@ Tab:DropDown("DropDown","Test",{"8","6"},function(v)
 end)
 
 
-local Tab2  = Win:CreateTab('Tab2')
+local Tab2  = Win:CreateTab('Main3')
 
-Tab2:Toggle("Toggle",false,function(v)
+Tab2:Toggle("dimemaymatday","AXC Omn Top Lua Code",false,function(v)
     _G.Test = v
 end)
 
