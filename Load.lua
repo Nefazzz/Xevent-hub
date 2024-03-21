@@ -12,15 +12,15 @@ ImageButton1.BorderSizePixel = 0
 ImageButton1.Position = UDim2.new(0.120833337, 0, 0.0952890813, 0)
 ImageButton1.Size = UDim2.new(0, 50, 0, 50)
 ImageButton1.Draggable = true
-ImageButton1.Image = "rbxassetid://16447011266"
+ImageButton1.Image = "rbxassetid://14161592006"
 ImageButton1.MouseButton1Down:connect(function()
   game:GetService("VirtualInputManager"):SendKeyEvent(true,305,false,game)
   game:GetService("VirtualInputManager"):SendKeyEvent(false,305,false,game)
 end)
 UICorner.Parent = ImageButton1
 
-if game:GetService("CoreGui"):FindFirstChild("XeventHub") then
-    game:GetService("CoreGui"):FindFirstChild("XeventHub"):Destroy()
+if game:GetService("CoreGui"):FindFirstChild("THUNDERZHUB") then
+    game:GetService("CoreGui"):FindFirstChild("THUNDERZHUB"):Destroy()
 end
 
 repeat wait(1) until game:IsLoaded()
@@ -114,14 +114,14 @@ function Update:Window(text,logo,keybind)
     local keybind = keybind or Enum.KeyCode.RightControl
     local yoo = string.gsub(tostring(keybind),"Enum.KeyCode.","")
 
-    local XeventHub = Instance.new("ScreenGui")
-    XeventHub.Name = "XeventHub"
-    XeventHub.Parent = game.CoreGui
-    XeventHub.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+    local THUNDERZHUB = Instance.new("ScreenGui")
+    THUNDERZHUB.Name = "THUNDERZHUB"
+    THUNDERZHUB.Parent = game.CoreGui
+    THUNDERZHUB.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
     local Main = Instance.new("Frame")
     Main.Name = "Main"
-    Main.Parent = XeventHub
+    Main.Parent = THUNDERZHUB
     Main.ClipsDescendants = true
     Main.AnchorPoint = Vector2.new(0.5,0.5)
     Main.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
@@ -277,7 +277,7 @@ function Update:Window(text,logo,keybind)
 	Logo.BackgroundTransparency = 1.000
 	Logo.Position = UDim2.new(0, -5, 0, -5)
 	Logo.Size = UDim2.new(0, 135, 0, 135)
-	Logo.Image = "rbxassetid://16447011266"
+	Logo.Image = "rbxassetid://14094405648"
     local Tab = Instance.new("Frame")
     Tab.Name = "Tab"
     Tab.Parent = Main
@@ -642,7 +642,7 @@ function Update:Window(text,logo,keybind)
     local main = {}
     function main:AddButton(text, callback)
         if logo == nil then
-            logo = "16447011266"
+            logo = "12523036534"
         end
         local Button = Instance.new("Frame")
         local UICorner = Instance.new("UICorner")
@@ -679,7 +679,7 @@ function Update:Window(text,logo,keybind)
         ImageButton.BorderSizePixel = 0
         ImageButton.Position = UDim2.new(0, 350, 0, 6)
         ImageButton.Size = UDim2.new(0, 20, 0, 20)
-        ImageButton.Image = "rbxassetid://16447011266"
+        ImageButton.Image = "rbxassetid://14161592006"
         ImageButton.ImageColor3 = Color3.fromRGB(255, 255, 255)
 
         UICorner_2.CornerRadius = UDim.new(0, 5)
@@ -742,7 +742,7 @@ function Update:Window(text,logo,keybind)
     function main:AddToggle(TogInfo ,default, callback)
         local toggle = false
         if logo == nil then
-            logo = "16447011266"
+            logo = "12523036534"
         end
         local CheckFrame = Instance.new("Frame")
         local CheckFrame2 = Instance.new("Frame")
@@ -789,7 +789,7 @@ function Update:Window(text,logo,keybind)
         ImageLabel.BorderSizePixel = 0
         ImageLabel.Position = UDim2.new(0, 5, 0, 6)
         ImageLabel.Size = UDim2.new(0, 20, 0, 20)
-        ImageLabel.Image = "rbxassetid://16447011266"
+        ImageLabel.Image = "rbxassetid://14161592006"
         ImageLabel.ImageColor3 = Color3.fromRGB(255, 255, 255)
 
         Space.Name = "Space"
@@ -1143,7 +1143,7 @@ function Update:Window(text,logo,keybind)
         ImageLabel.BorderSizePixel = 0
         ImageLabel.Position = UDim2.new(0, 7.5, 0, 7.5)
         ImageLabel.Size = UDim2.new(0, 30, 0, 30)
-        ImageLabel.Image = "rbxassetid://16447011266"
+        ImageLabel.Image = "rbxassetid://14161592006"
             
         Title.Parent = SliderFrame_2
         Title.BackgroundColor3 = Color3.fromRGB(150, 150, 150)
@@ -2377,35 +2377,7 @@ if game.PlaceId == 2753915549 then
                 NameMon = "Snow Demon"
                 CFrameQuest = CFrame.new(-1150.0400390625, 20.378934860229492, -14446.3349609375)
                 CFrameMon = CFrame.new(-880.2006225585938, 71.24776458740234, -14538.609375)
-            elseif MyLevel ==2450 or MyLevel <= 2474 then
-                Mon = "Isle Outlaw [Lv. 2450]"
-            		LevelQuest = 1
-            		NameQuest = "TikiQuest1"
-            		NameMon = "Isle Outlaw"
-            		CFrameQuest = CFrame.new(-16545.9355, 55.6863556, -173.230499)
-            		CFrameMon = CFrame.new(-16120.6035, 116.520554, -103.038849)
-		        elseif MyLevel == 2475 or MyLevel <= 2499 then
-		            Mon = "Island Boy [Lv. 2475]"
-		            LevelQuest = 2
-		            NameQuest = "TikiQuest1"
-		            NameMon = "Island Boy"
-		            CFrameQuest = CFrame.new(-16545.9355, 55.6863556, -173.230499)
-		            CFrameMon = CFrame.new(-16751.3125, 121.226219, -264.015015)
-		        elseif MyLevel == 2500 or MyLevel <= 2524 then
-		            Mon = "Sun-kissed Warrio [Lv. 2500]"
-		            LevelQuest = 1
-		            NameQuest = "TikiQuest2"
-		            NameMon = "Sun-kissed Warrio"
-		            CFrameQuest = CFrame.new(-16539.078125, 55.68632888793945, 1051.5738525390625)
-		            CFrameMon = CFrame.new(-16294.6748, 32.7874393, 1062.4856)
-		        elseif MyLevel >= 2525 then
-		            Mon = "Isle Champion [Lv. 2525]"
-		            LevelQuest = 2
-		            NameQuest = "TikiQuest2"
-		            NameMon = "Isle Champion"
-		            CFrameQuest = CFrame.new(-16539.078125, 55.68632888793945, 1051.5738525390625)
-		            CFrameMon = CFrame.new(-16933.2129, 93.3503036, 999.450989)
-		        end
+            end
         end
     end
 
@@ -3649,9 +3621,9 @@ getgenv().ToTargets = function(p)
 
 
 
-local Library = Update:Window("XEVENT HUB","",Enum.KeyCode.RightControl);
+local Library = Update:Window("HIRIMII HUB v2","",Enum.KeyCode.RightControl);
 
-local H = Library:AddTab("Credit","12950870585")
+local H = Library:AddTab("Dev","12950870585")
 local Main = Library:AddTab("Main","6026568198")
 local M = Library:AddTab("Item","9606626859")
 local Ss = Library:AddTab("Stats","7040410130")
@@ -3665,26 +3637,40 @@ local Misc = Library:AddTab("Misc","11156061121")
 
 local Time = H:AddLabel("Executor Time");spawn(function() getgenv().Time = true;while true do wait(.1) UpdateTime() end end);function UpdateTime() local date = os.date("*t");local hour = (date.hour) % 24;local ampm = hour < 12 and "AM" or "PM";local timezone = string.format("%02i:%02i:%02i %s", ((hour -1) % 12) + 1, date.min, date.sec, ampm);local datetime = string.format("%02d/%02d/%04d", date.day, date.month, date.year);local LocalizationService = game:GetService("LocalizationService");local Players = game:GetService("Players");local player = Players.LocalPlayer;local name = player.Name;local result, code = pcall(function()   return LocalizationService:GetCountryRegionForPlayerAsync(player)  end);Time:Set(" : " .. timezone);Time:Set("Executor Time: " .. datetime .. " [ " .. code .. " ]");spawn(function() if getgenv().Time then pcall(function()  while wait() do  Time()  end end) end end) end
 
-H:AddLabel("Xevent Hub Jaya-Jaya")
+H:AddLabel("Support PC/Mobile")
+H:AddLabel("SCRIPT V2 UPDATE")
 
 H:AddSeperator("Status")
 
-H:AddLabel("PC/Computer: ?")
+H:AddLabel("PC/Computer: ✅")
 H:AddLabel("Mobile: ✅")
 
-H:AddSeperator("Support Executor")
+H:AddSeperator("Support Execute")
+
+H:AddLabel("PC/Computer:")
+H:AddLabel("Fluxus, Electron,...")
 
 H:AddLabel("Mobile:")
-H:AddLabel("Fluxus, Delta, Codex, Hydrogen, Arceux (?)")
+H:AddLabel("Fluxus, DeltaX, Codex, Hydrogen")
+H:AddLabel("Flodded V")
 
 H:AddSeperator("Developer")
 
-H:AddLabel("Code By Xevent")
-H:AddLabel("Heikso (Best friend)")
+H:AddLabel("Code By Hirimii")
 
-H:AddLabel("Xevent Hub Discord")
-H:AddLabel("Soon")
-H:AddLabel("Discord: Xevent_official")
+H:AddLabel("Hirimi Hub Discord")
+H:AddLabel("https://discord.gg/rUKWhEJHf2")
+H:AddLabel("Discord: t_hirimii")
+ 
+
+H:AddButton("Youtube Hirimi Hub",function()
+setclipboard("https://youtube.com/@hirimii0901")
+game.StarterGui:SetCore("SendNotification", {
+      Icon = "rbxassetid://14161592006";
+      Title = "Hirimi Hub", 
+      Text = "Copied";
+})
+end)
 
 
 
@@ -3781,6 +3767,7 @@ local Saber = H:AddLabel("❌: Saber")
 local Rengoku = H:AddLabel("❌: Rengoku")
 local Midnight_Blade = H:AddLabel("❌: Midnight Blade")
 local Dragon_Trident = H:AddLabel("❌: Dragon Trident")
+local Yama = H:AddLabel("❌: Yama")
 local Buddy_Sword = H:AddLabel("❌: Buddy Sword")
 local Canvander = H:AddLabel("❌: Canvander")
 local Twin_Hooks = H:AddLabel("❌: Twin Hooks")
@@ -3788,7 +3775,6 @@ local Spikey_Trident = H:AddLabel("❌: Spikey Trident")
 local Hallow_Scythe = H:AddLabel("❌: Hallow Scythe")
 local Dark_Dagger = H:AddLabel("❌: Dark Dagger")
 local Tushita = H:AddLabel("❌: Tushita")
-local Yama = H:AddLabel("❌: Yama")
 
 spawn(function()
     while task.wait() do
@@ -3805,6 +3791,9 @@ spawn(function()
                 end
                 if v.Name == "Dragon Trident" then
                     Dragon_Trident:Set("✅: Dragon Trident")
+                end
+                if v.Name == "Yama" then
+                    Yama:Set("✅: Yama")
                 end
                 if v.Name == "Buddy Sword" then
                     Buddy_Sword:Set("✅: Buddy Sword")
@@ -3826,10 +3815,7 @@ spawn(function()
                 end
                 if v.Name == "Tushita" then
                     Tushita:Set("✅: Tushita")
-                end
-               if v.Name == "Yama" then
-                    Yama:Set("✅: Yama")
-                end
+                 end
             end
         end)
     end
@@ -3912,9 +3898,6 @@ spawn(function()
         end
         if game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BuyDragonTalon",true) == 1 then
             Dragon_Talon:Set("✅: Dragon Talon")
-        end
-        if game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BuyGodHuman",true) == 1 then
-            God_Human:Set("✅: God Human")
         end
     end
 end)
@@ -4032,7 +4015,7 @@ task.spawn(function()
         BypassTP = value
     end)
     
-       Main:AddToggle("Auto Turn On Race V4",false,function(value)
+       Main:AddToggle("Awakening Race (On When Enable Farm)",false,function(value)
         AutoAwakeningRace = value
        end)
  
@@ -4120,7 +4103,7 @@ task.spawn(function()
 
 
     
-Main:AddToggle("Auto Kaitun (Made by Heiskso)",false,function(value)
+Main:AddToggle("Auto Kaitan",false,function(value)
        _G.AutoFarm = value
        _G.SelectWeapon = "Combat"
        _G.Auto_Stats_Kaitun = value
@@ -4209,8 +4192,7 @@ spawn(function()
 			end
 		end
 	end
-end)
-  
+    end)
 Main:AddToggle("Set Spawn Point",true,function(value)
     _G.Set = value
 end)
@@ -4231,7 +4213,7 @@ end)
     
     Main:AddLabel("Chest Farm")
     
-Main:AddToggle("Farm Chest [Tween]",false,function(value)
+Main:AddToggle("Farm Chest",false,function(value)
  AutoFarmChest = value
  StopTween(AutoFarmChest)
  end)
@@ -4260,7 +4242,7 @@ spawn(function()
 	end
 end)
 
-Main:AddToggle("Farm Chest [Risk]",false,function(vu)
+Main:AddToggle("Farm Chest Bypass",false,function(vu)
 	_G.ChestBypass = vu
 end)
 
@@ -4848,7 +4830,7 @@ Main:AddToggle("Farm Chest Hop",_G.AutoFarmChest_Hop,function(value)
     end)
 
 
-    Main:AddSeperator("Farm Cake Prince")
+    Main:AddSeperator("Dough Boss")
     
         local MobKilled = Main:AddLabel("Killed")
     
@@ -13846,14 +13828,14 @@ spawn(function()
 
 
 game.StarterGui:SetCore("SendNotification", {
-      Icon = "rbxassetid://16447011266";
-      Title = "Xevent Hub", 
+      Icon = "rbxassetid://14161592006";
+      Title = "Hirimi Hub", 
       Text = "Welcome To Script";
 })
 wait(3)
 game.StarterGui:SetCore("SendNotification", {
-      Icon = "rbxassetid://16447011266";
-      Title = "Xevent Hub", 
+      Icon = "rbxassetid://14161592006";
+      Title = "Hirimi Hub", 
       Text = "Join For Discord In Home";
 })
    
