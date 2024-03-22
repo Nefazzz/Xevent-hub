@@ -23,10 +23,6 @@ if game:GetService("CoreGui"):FindFirstChild("XeventHub") then
     game:GetService("CoreGui"):FindFirstChild("XeventHub"):Destroy()
 end
 
-if game:GetService("CoreGui"):FindFirstChild("XeventHub") then
-    game:GetService("CoreGui"):FindFirstChild("XeventHub"):Destroy()
-end
-
 repeat wait(1) until game:IsLoaded()
 local LocalPlayer = game:GetService("Players").LocalPlayer
 local HttpService = game:GetService("HttpService")
