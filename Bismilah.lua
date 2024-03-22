@@ -5495,7 +5495,7 @@ end)
     end)
     
     M:AddSeperator("World")
-    M:AddLabel(".")
+    
     if World1 then
         M:AddToggle("Quest Second Sea",_G.AutoSecondSea,function(value)
             _G.AutoSecondSea = value
@@ -11396,6 +11396,7 @@ end)
 
 
     T:AddSeperator("World")
+    T:AddLabel("Bismilah")
     
     T:AddButton("Teleport To Old World",function()
         game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("TravelMain")
