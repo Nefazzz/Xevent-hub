@@ -13858,4 +13858,4 @@ game.StarterGui:SetCore("SendNotification", {
       Title = "Xevent Hub", 
       Text = "Join For Discord In Home";
 })
-   
+end
