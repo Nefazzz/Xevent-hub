@@ -3640,9 +3640,7 @@ getgenv().ToTargets = function(p)
     end)
 
 
-
-wait(3)
-local Library = Update:Window("Xevent Hub","Made By Xevent",Enum.KeyCode.RightControl);
+local Library = Update:Window("Xevent Hub","Blox Fruit | Version Beta",Enum.KeyCode.RightControl);
 
 local H = Library:AddTab("Credit","12950870585")
 local Main = Library:AddTab("Main","6026568198")
@@ -3678,7 +3676,6 @@ H:AddLabel("Discord: Xevent_Official")
 H:AddSeperator("Status")
     
     local locallv = H:AddLabel("Level")
-    
     spawn(function()
         while wait() do
             pcall(function()
@@ -3688,7 +3685,6 @@ H:AddSeperator("Status")
     end)
     
     local localrace = H:AddLabel("Race")
-    
     spawn(function()
         while wait() do
             pcall(function()
@@ -3698,7 +3694,6 @@ H:AddSeperator("Status")
     end)
     
     local localbeli = H:AddLabel("Beli")
-    
     spawn(function()
         while wait() do
             pcall(function()
@@ -3708,7 +3703,6 @@ H:AddSeperator("Status")
     end)
     
     local localfrag = H:AddLabel("Fragment")
-    
     spawn(function()
         while wait() do
             pcall(function()
@@ -3718,8 +3712,7 @@ H:AddSeperator("Status")
     end)
     
     
-    local localexp = H:AddLabel("ExP")
-    
+    local localexp = H:AddLabel("Exp")
     spawn(function()
         while wait() do
             pcall(function()
@@ -3729,7 +3722,6 @@ H:AddSeperator("Status")
     end)
     
     local localstat = H:AddLabel("Stats Points")
-    
     spawn(function()
         while wait() do
             pcall(function()
@@ -3739,7 +3731,6 @@ H:AddSeperator("Status")
     end)
     
     local localbountyhornor = H:AddLabel("Bounty")
-    
     spawn(function()
         while wait() do
             pcall(function()
@@ -3749,7 +3740,6 @@ H:AddSeperator("Status")
     end)
     
     local localDevil = H:AddLabel("Devil Fruit")
-    
     spawn(function()
         while wait() do
             pcall(function()
@@ -3934,8 +3924,6 @@ spawn(function()
     end
 end)
 
-
-
 H:AddSeperator("Accessory")
 
 local Dark_Coat = H:AddLabel("❌: Dark Coat")
@@ -3943,7 +3931,6 @@ local Ghoul_Mask = H:AddLabel("❌: Ghoul Mask")
 local Swan_Glass = H:AddLabel("❌: Swan Glass")
 local Pale_Scarf = H:AddLabel("❌: Pale Scarf")
 local Valkyrie_Helm = H:AddLabel("❌: Valkyrie Helm")
-
 
 spawn(function()
     while task.wait() do
@@ -3970,8 +3957,6 @@ spawn(function()
 end)
 
 Main:AddSeperator("Farm")
-
-
 
 local WeaponList = {"Melee","Sword","Fruit","Gun"}
 _G.SelectWeapon = "Melee"
@@ -4019,7 +4004,7 @@ task.spawn(function()
 	end
     end)
     
-       Main:AddToggle("Bypass TP (Beta)",BypassTP,function(value)
+       Main:AddToggle("Bypass TP",BypassTP,function(value)
         BypassTP = value
     end)
     
@@ -4107,11 +4092,8 @@ task.spawn(function()
             end
         end
     end)
-   
-
-
     
-Main:AddToggle("Auto Kaitun (Made by Heikso",false,function(value)
+Main:AddToggle("Auto Kaitun (Made by Heikso)",false,function(value)
        _G.AutoFarm = value
        _G.SelectWeapon = "Combat"
        _G.Auto_Stats_Kaitun = value
@@ -4217,7 +4199,6 @@ spawn(function()
     end
   end
 end)
-
     
     Main:AddLabel("Chest Farm")
     
@@ -4837,11 +4818,9 @@ Main:AddToggle("Farm Chest Hop",_G.AutoFarmChest_Hop,function(value)
     _G.AutoFarmChest_Hop = value
     end)
 
-
     Main:AddSeperator("Farm Cake Prince")
-    
+        
         local MobKilled = Main:AddLabel("Killed")
-    
     spawn(function()
         while wait() do
             pcall(function()
@@ -13855,6 +13834,7 @@ spawn(function()
     end)
     end)
 
+print("Xevent Hub READY")
 
 game.StarterGui:SetCore("SendNotification", {
       Icon = "rbxassetid://16826315208";
