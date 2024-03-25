@@ -5329,7 +5329,8 @@ end)
 
 local CamShake = require(game.ReplicatedStorage.Util.CameraShaker)
 CamShake:Stop()
-    
+
+wait(2)
 Main:AddToggle("Auto Click",false,function(value)
 _G.AutoClick = value
 end)
